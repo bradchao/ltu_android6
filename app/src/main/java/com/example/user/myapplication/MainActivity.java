@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         WebSettings settings = webVidew.getSettings();
         settings.setJavaScriptEnabled(true);
 
-        webVidew.loadUrl("https://tw.yahoo.com/");
+        //webVidew.loadUrl("https://tw.yahoo.com/");
+        webVidew.loadUrl("file:///android_asset/ltu01.html");
     }
 
     @Override
