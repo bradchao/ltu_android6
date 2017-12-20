@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -41,4 +42,9 @@ public class MainActivity extends AppCompatActivity {
         }
         return true; //super.onKeyDown(keyCode, event);
     }
+
+    public void test1(View view){
+        webVidew.loadUrl("javascript:test1()");
+    }
+
 }
