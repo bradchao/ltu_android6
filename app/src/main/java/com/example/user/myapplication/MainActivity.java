@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void test1(View view){
-        webVidew.loadUrl("javascript:test1()");
+        webVidew.loadUrl("javascript:moveTo(" + 24.137075 + "," + 120.609136 + ")");
     }
 
 }
