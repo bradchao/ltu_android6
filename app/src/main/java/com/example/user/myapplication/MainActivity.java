@@ -2,6 +2,8 @@ package com.example.user.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -25,5 +27,14 @@ public class MainActivity extends AppCompatActivity {
         settings.setJavaScriptEnabled(true);
 
         webVidew.loadUrl("https://tw.yahoo.com/");
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK){
+
+            finish();
+        }
+        return true; //super.onKeyDown(keyCode, event);
     }
 }
