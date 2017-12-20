@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         settings.setJavaScriptEnabled(true);
 
         //webVidew.loadUrl("https://tw.yahoo.com/");
-        webVidew.loadUrl("file:///android_asset/ltu01.html");
+        webVidew.loadUrl("file:///android_asset/mymap.html");
     }
 
     @Override
